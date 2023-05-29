@@ -1,0 +1,257 @@
+/* google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap");
+
+/*  css variables */
+:root {
+  --card-bg-01: #fdefe6;
+  --card-bg-02: #d6e5fb;
+  --card-bg-03: #ceebe9;
+  --card-bg-04: #e2f2b2;
+  --primary-color: #1197F5;
+  --hero-bg: #d6e5fb;
+  --heading-fontSize: 2rem;
+  --small-text-color: #999;
+  --heading-text-color: #1197F5;
+}
+
+/* reset browser default */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  padding: 0;
+  margin: 0;
+  color: #1197F5;
+}
+
+p {
+  color: var(--small-text-color);
+  font-size: 1rem;
+}
+
+h1,
+h2 {
+  font-size: var(--heading-fontSize);
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+  color: unset;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 60px 0px;
+}
+
+.section-white {
+  background-color: white;
+  padding: 70px 0;
+}
+
+.team-item {
+  background-color: #ebebeb;
+  text-align: center;
+  margin: 20px 0;
+  padding: 50px 20px 40px 20px;
+  border-radius: 8px 8px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.team-item:hover {
+  background-color: var(--primary-color);
+  color: white !important;
+}
+
+.team-item:hover .team-info p {
+  color: white;
+}
+
+.team-item h3 {
+  margin: 20px 0 1px 0 !important;
+  color: #454545;
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.section-title {
+  white-space: pre-line;
+}
+
+.team-item:hover h3{
+  color: #ddd;
+}
+
+.team-info {
+  display: block;
+  margin-bottom: 0;
+}
+
+.team-info p {
+  color: #acacac;
+  font-style: italic;
+}
+
+
+.team-img {
+  max-width: 140px;
+  padding: 6px 6px;
+  background-color: #dedede;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  border-radius: 50%;
+}
+
+ul.team-icon {
+  margin-top: 25px;
+}
+
+ul.team-icon li {
+  display: inline-block;
+  margin: 0 3px;
+  -webkit-transition: all 0.25s ease-in-out;
+  -moz-transition: all 0.25s ease-in-out;
+  -ms-transition: all 0.25s ease-in-out;
+  -o-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+ul.team-icon li a {
+  margin: 0;
+  display: inline-block;
+  padding: 8px 8px;
+  width: 34px;
+  height: 34px;
+  font-size: 18px;
+  line-height: 18px;
+  background-color: #fff;
+  border-radius: 50%;
+  color: #fff;
+}
+
+ul.team-icon li a.twitter {
+  background-color: #4099ff;
+}
+
+ul.team-icon li a.facebook {
+  background-color: #c92228;
+}
+
+ul.team-icon li a.instagram {
+  background-color: #db5998;
+}
+
+ul.team-icon li a.googleplus{
+  background-color: #f86a27;
+}
+
+.card:hover {
+  background-color: #4099ff;
+}
+
+.card:hover h5,
+.card:hover p {
+  color: #fff;
+}
+
+/* Container for flip cards */
+.flip-card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.card-img {
+  width: 100%;
+  height: 0;
+  padding-top: 100%;
+}
+
+/* Flip card container */
+.flip-card {
+  background-color: transparent;
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+  perspective: 1000px;
+}
+
+/* Flip card inner container */
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+}
+
+/* Flip card front */
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+}
+
+/* Flip card front image */
+
+
+/* Flip card back */
+.flip-card-back {
+  transform: rotateY(180deg);
+  margin-bottom: 20px;
+}
+
+/* Show the flip card back on hover */
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+/* Card name */
+.flip-card-back h3 {
+  font-size: 24px;
+  margin-top: 70px;
+  font-weight: bold;
+}
+
+
+
+@media only screen and (max-width:768px) {
+  section {
+    padding: 40px 0px;
+  }
+}
+
+@media only screen and (max-width:768px) {
+  section {
+    padding: 40px 0px;
+  }
+}
